@@ -7,19 +7,22 @@ import { TerceroComponent } from './tercero/tercero.component';
 
 import { DataTablesModule } from 'angular-datatables';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-import { FormComponent } from './form/form.component';
+import { FormComponent } from './tercero/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TerceroComponent,
-    FormComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     DataTablesModule,
     NgbModule
+  ],
+  entryComponents: [
+    FormComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

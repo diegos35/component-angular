@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, AfterViewInit, ViewChild, OnDestroy } from '@angular/core';
 import { DataTableDirective } from 'angular-datatables';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-//import { FormComponent } from './form/form.component';
 import { Subject } from 'rxjs';
 import { TerceroService } from  '../tercero.service';
 import Swal from "sweetalert2";
@@ -133,11 +132,11 @@ export class TerceroComponent implements OnInit, OnDestroy, AfterViewInit {
 	}
 
 	openModal() {
-		this.modal = this.modalService.open(FormComponent, {
-			size: 'md',
-			backdrop: 'static',
-			keyboard: false
-		});
+		// this.modal = this.modalService.open(FormComponent, {
+		// 	size: 'md',
+		// 	backdrop: 'static',
+		// 	keyboard: false
+		// });
 		this.modal.componentInstance.lista_tipo_id = this.lista_tipo_id;
 		this.modal.result.then(
             (result) => {
