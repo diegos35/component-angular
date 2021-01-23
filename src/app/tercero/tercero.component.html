@@ -1,0 +1,16 @@
+<div class="row form-group">
+    <div class="col-12">
+        <br>
+            <div #botones class="btn-group" class="float-right" role="group"
+            data-toggle="tooltip" data-placement="top" title="" data-original-title=".btn-xlg">
+            <button class="btn btn-success" (click)="openModal()" title="Nuevo">Nuevo</button>
+        </div>
+        <br>
+        <br>
+        <hr>
+        <div class="col-lg-12">
+            <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="display compact responsive w-100"></table>
+        </div>
+    </div>
+</div>
+
